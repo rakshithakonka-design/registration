@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-box {
+      background-color: white;
+      border: 8px solid gold;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      width: 300px;
+      text-align: center;
+    }
+    .form-box input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .form-box button {
+      background-color: darkblue;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .form-box button:hover { background-color: gold; }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Event Registration</h2>
+    <!-- Redirects to thankyou.html after submit -->
+    <form action="thankyou.html" method="get">
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" required>
+      <label>Phone Number:</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
